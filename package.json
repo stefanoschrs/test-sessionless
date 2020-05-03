@@ -1,0 +1,23 @@
+{
+  "name": "sessionless",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:client-1": "parcel serve --no-cache --no-source-maps --port 4000 -d /tmp/client-1-dist client-1/index.html",
+    "start:client-2": "parcel serve --no-cache --no-source-maps --port 4001 -d /tmp/client-2-dist client-2/index.html",
+    "start:server": "cd server; node .",
+    "start:server:dev": "cd server; nodemon ."
+  },
+  "author": "Stefanos Chrs <root@stefanoschrs.com> (https://stefanoschrs.com/)",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1"
+  },
+  "devDependencies": {
+    "parcel": "^1.12.4",
+    "typescript": "^3.8.3"
+  }
+}
